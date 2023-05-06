@@ -1,4 +1,1 @@
-Ann, 100
-Benny, 102
-Carol, 214
-Daren, 129Nikita, 0
+

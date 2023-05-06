@@ -25,7 +25,7 @@ def get_user_score(user_name):
 def update_user_score(new_user: bool, user_name, score):  # This fucntion for updating name and scores in file
     if new_user is True:
         file = open('userScrores.txt', 'a')
-        file.write(f'{user_name}, {score}')
+        file.write(f'\n{user_name}, {score}\n')
         file.close()
     else:
         temp = open('userScrores.tmp', 'w')  # Create new temporary file
@@ -34,7 +34,7 @@ def update_user_score(new_user: bool, user_name, score):  # This fucntion for up
             content = line.split(', ')
             if content[0] == user_name:
                 score = content[1]
-                temp.write(f'{user_name}, {score}')
+                temp.write(f'{user_name}, {score}\n')
             else:
                 temp.write(line)
 
